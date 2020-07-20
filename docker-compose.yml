@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+ prasad17:   #  this is my service  first
+  image: nginx:prasad17    #  this is the tag  of image we want to build 
+  build: https://github.com/vnaprasad/devsecops_training.git  #  path of Dockerfile
+  container_name: prasad17  #  name of container 
+  ports:    #  we are exposing  port number 
+   - "1723:80"
